@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" class=""> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>SampleCloud | Soundcloud Sample Search</title>
+
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body class="preload">
+	<div class="wrapper">
+
+		<form id="samplesearch">
+			<input type="text" value="808"/>
+			<br><br>
+			<span class="duration">max sample length: <span id="currentValue"></span> seconds</span>
+			<br>
+			<input id="slider" name="duration-range" type="range" min="10" max="120" value="60">
+
+			<br><br>
+
+			<input id="submit" type="submit" value="Search" />
+
+		</form>
+
+			<div class="results" id="results">
+			  <ul></ul>
+			</div>
+
+	</div><!-- end wrapper -->
+
+	<script src="js/html5slider.js"></script>
+	<script src="http://connect.soundcloud.com/sdk.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

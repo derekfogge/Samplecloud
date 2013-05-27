@@ -1,0 +1,66 @@
+@import "compass";
+@import "normalize.css";
+
+$bg-color: white;
+$highlight-color: red;
+
+$breakpoint-1: "max-width: 820px";
+$breakpoint-2: "max-width: 680px";
+$breakpoint-3: "max-width: 520px";
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, .wrapper{
+	height:100%;
+  width: 100%;
+}
+
+html{
+	background: $bg-color;
+}
+.wrapper{
+	margin: 0 auto;
+  padding: 60px;
+}
+form{
+  margin: 0 auto;
+  line-height: 2;
+}
+
+ul{
+  list-style: none;
+  margin-left: -40px;
+  padding-bottom: 40px;
+}
+.results{
+  white-space: nowrap;
+}
+
+
+//helpers
+
+.break-3{
+	display:none;
+	@media ($breakpoint-3){
+		display: block;
+	}
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
