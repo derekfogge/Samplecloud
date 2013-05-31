@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	$('li a').lazyload();
 
-/*
+
 	//convert each returned track's permalink_url to a player widget
 	function makeWidgets(){
 		$('a[href*="soundcloud.com"]').each(function(){
@@ -29,10 +29,6 @@ $(document).ready(function(){
 		  });
 		});
 	}
-*/
-
-
-
 
 // search for soundcloud samples on submit
 	$('#samplesearch').submit(function (){
@@ -59,19 +55,17 @@ $(document).ready(function(){
 
 				$.each(tracks, function(index, value){
 					console.log(index+" and "+value);
-					$('#results ul').append('<li>'+value['title']+'<br><a href="'+value['permalink_url']+'">'+value['permalink_url']+'</a></li>');
-					//makeWidgets();
+					$('#results ul').append('<li>'+value['title']+'<br><a href="'+value['permalink_url']+'">'+value['permalink_url']+'</a></li><br>');
+					makeWidgets();
 
 				});
 				console.log(tracks);
 				console.log('you searched for a ' + term + ' sample,');
 				console.log('that is ' + durationLimit + ' miliseconds long');
 			}
-
 		});
 
 		return false;
-
 
 	});
 });
