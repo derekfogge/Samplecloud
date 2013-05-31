@@ -59,19 +59,19 @@ $(document).ready(function(){
 
 				$.each(tracks, function(index, value){
 					console.log(index+" and "+value);
-					$('#results ul').append('<li>'+value['title']+'<br><a href="'+value['permalink_url']+'">'+value['permalink_url']+'</a></li><br>');
+					$('#results ul').append('<li>'+value['title']+'<br><a href="'+value['permalink_url']+'">'+value['permalink_url']+'</a></li>');
 					//makeWidgets();
-
-					SC.oEmbed("'+value['permalink_url']+'"), $('#results ul');
 
 				});
 				console.log(tracks);
 				console.log('you searched for a ' + term + ' sample,');
 				console.log('that is ' + durationLimit + ' miliseconds long');
 			}
+
 		});
 
 		return false;
+
 
 	});
 });
