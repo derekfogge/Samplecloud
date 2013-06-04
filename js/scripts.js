@@ -17,18 +17,16 @@ $(document).ready(function(){
 		});
 	}
 
-	$('li a').lazyload();
-
 
 	//convert each returned track's permalink_url to a player widget
-	function makeWidgets(){
+/*	function makeWidgets(){
 		$('a[href*="soundcloud.com"]').each(function(){
 		  var link = $(this);
 		  $.getJSON('http://soundcloud.com/oembed?format=js&url=' + link.attr('href') + '&iframe=true&callback=?', function(response){
 		    link.replaceWith(response.html);
 		  });
 		});
-	}
+	}*/
 
 // search for soundcloud samples on submit
 	$('#samplesearch').submit(function (){
@@ -54,10 +52,20 @@ $(document).ready(function(){
 			if(!tracks.errors){
 
 				$.each(tracks, function(index, value){
-					console.log(index+" and "+value);
-					$('#results ul').append('<li>'+value['title']+'<br><a href="'+value['permalink_url']+'">'+value['permalink_url']+'</a></li><br>');
 
-					makeWidgets();
+var template = '<iframe width="100%" height="" scrolling="no" src="http://w.soundcloud.com/player/?url=API_URL" frameborder="0"></iframe>';
+var html = template.replace('API_URL', 'https%3A%2F%2Fapi.soundcloud.com%2F' + value['permalink_url']);
+
+
+					console.log(index+" and "+value);
+					$('#results ul').append('<li>'+value['title']+'<br>'+
+					html);
+
+
+
+
+
+					//makeWidgets();
 
 				});
 				console.log(tracks);
