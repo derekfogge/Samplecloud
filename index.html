@@ -13,6 +13,9 @@
 
 	<link rel="shortcut icon" href="/favicon.png">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -21,18 +24,20 @@
 </head>
 <body class="preload">
 	<div class="wrapper">
+		<h1>Sample
+			<br>Cloud</h1><i class="icon-cloud cloud"></i>
+		<p>Enter a description of the sounds you're<span class="break"></span> looking for, and click Search.</p>
 
 		<form id="samplesearch">
-			<input type="text" value="808"/>
+			<input type="text" value="cowbell"/>
 
-			<br><br>
+			<br>
 			<span class="duration">max sample length: <span id="currentValue"></span> seconds</span>
 			<br>
-			<input id="slider" name="duration-range" type="range" min="10" max="120" value="60">
+			<input id="slider" name="duration-range" type="range" min="10" max="120" value="120">
 
-			<br><br>
-
-			<input id="submit" type="submit" value="Search" />
+			<br>
+			<input class="submit-btn" id="submit" type="submit" value="Search" />
 
 		</form>
 
@@ -42,7 +47,6 @@
 
 	</div><!-- end wrapper -->
 
-	<script src="js/html5slider.js"></script>
 	<script src="http://connect.soundcloud.com/sdk.js"></script>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 

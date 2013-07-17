@@ -6,48 +6,141 @@
 /* line 17, styles.scss */
 html, body, .wrapper {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  color: white;
+  background: #071a36 url(../img/bg.jpg) center top no-repeat fixed; }
 
-/* line 22, styles.scss */
+/* line 24, styles.scss */
 html {
-  background: white; }
+  overflow-y: scroll; }
 
-/* line 25, styles.scss */
+/* line 27, styles.scss */
 .wrapper {
+  padding: 0 18px;
   margin: 0 auto;
-  padding: 60px; }
+  width: 600px;
+  height: 100%; }
+  @media (max-width: 600px) {
+    /* line 27, styles.scss */
+    .wrapper {
+      width: 96%;
+      padding: 0 18px; } }
 
-/* line 29, styles.scss */
+/* line 38, styles.scss */
+h1 {
+  -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+  -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+  -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+  transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+  display: block;
+  font-size: 10em;
+  font-family: "Crete Round", serif;
+  color: #ff3800;
+  line-height: 0.9em;
+  padding: 30px 0 20px;
+  margin: 0px 30px; }
+  @media (max-width: 600px) {
+    /* line 38, styles.scss */
+    h1 {
+      -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      font-size: 8em;
+      margin: 0 10px; } }
+  @media (max-width: 480px) {
+    /* line 38, styles.scss */
+    h1 {
+      -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      font-size: 6em;
+      margin: 0 10px; } }
+
+/* line 58, styles.scss */
+.cloud {
+  -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+  -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+  -o-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+  transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+  color: white;
+  font-size: 6em;
+  display: block;
+  margin-top: -140px;
+  margin-left: 460px; }
+  @media (max-width: 600px) {
+    /* line 58, styles.scss */
+    .cloud {
+      font-size: 5em;
+      margin-top: -116px;
+      margin-left: 358px; } }
+  @media (max-width: 480px) {
+    /* line 58, styles.scss */
+    .cloud {
+      font-size: 4.6em;
+      margin-top: -90px;
+      margin-left: 268px; } }
+
+/* line 76, styles.scss */
+p {
+  font-family: "Crete Round", serif;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 15px; }
+  @media (max-width: 600px) {
+    /* line 76, styles.scss */
+    p {
+      margin-top: 30px;
+      font-size: 17px;
+      line-height: 1.4; } }
+
+/* line 88, styles.scss */
 form {
-  margin: 0 auto;
-  line-height: 2; }
+  font-family: "Crete Round", serif;
+  color: #333;
+  font-size: 19px;
+  margin: 40px auto 24px;
+  line-height: 2;
+  background: whitesmoke;
+  padding: 26px 58px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px black; }
+  @media (max-width: 600px) {
+    /* line 88, styles.scss */
+    form {
+      padding: 16px; } }
 
-/* line 34, styles.scss */
+/* line 102, styles.scss */
 ul {
   list-style: none;
   margin-left: -40px;
   padding-bottom: 40px; }
 
-/* line 39, styles.scss */
-.results {
-  white-space: nowrap; }
+/* line 109, styles.scss */
+iframe {
+  background-color: whitesmoke;
+  box-shadow: 0 2px 10px black;
+  max-height: 166px;
+  margin-bottom: 20px;
+  border-radius: 4px; }
 
-/* line 46, styles.scss */
-.break-3 {
+/* line 118, styles.scss */
+.break {
   display: none; }
-  @media (max-width: 520px) {
-    /* line 46, styles.scss */
-    .break-3 {
+  @media (max-width: 600px) {
+    /* line 118, styles.scss */
+    .break {
       display: block; } }
 
-/* line 53, styles.scss */
+/* line 125, styles.scss */
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important; }
 
-/* line 60, styles.scss */
+/* line 132, styles.scss */
 .notransition {
   -webkit-transition: none !important;
   -moz-transition: none !important;
