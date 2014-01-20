@@ -1,123 +1,149 @@
 @import url(normalize.css);
-/* line 13, styles.scss */
 * {
   box-sizing: border-box; }
 
-/* line 17, styles.scss */
 html, body, .wrapper {
   height: 100%;
   width: 100%;
   color: white;
   background: #071a36 url(../img/bg.jpg) center top no-repeat fixed; }
 
-/* line 24, styles.scss */
 html {
   overflow-y: scroll; }
 
-/* line 27, styles.scss */
 .wrapper {
   padding: 0 18px;
   margin: 0 auto;
-  width: 600px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 90%;
   height: 100%; }
-  @media (max-width: 600px) {
-    /* line 27, styles.scss */
-    .wrapper {
-      width: 96%;
-      padding: 0 18px; } }
 
-/* line 38, styles.scss */
+header {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; }
+
 h1 {
-  -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-  -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-  -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-  transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+  -webkit-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+  -moz-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+  transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
   display: block;
-  font-size: 10em;
+  font-size: 4.65em;
   font-family: "Crete Round", serif;
   color: #ff3800;
   line-height: 0.9em;
   padding: 30px 0 20px;
-  margin: 0px 30px; }
-  @media (max-width: 600px) {
-    /* line 38, styles.scss */
+  margin: 0px auto;
+  text-align: center; }
+  @media (min-width: 481px) {
     h1 {
-      -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      font-size: 8em;
-      margin: 0 10px; } }
-  @media (max-width: 480px) {
-    /* line 38, styles.scss */
-    h1 {
-      -webkit-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      -moz-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      -o-transition: font-size 0s ease-in-out, margin 0.1s ease-in;
-      transition: font-size 0s ease-in-out, margin 0.1s ease-in;
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
       font-size: 6em;
-      margin: 0 10px; } }
+      margin: 0 auto; } }
+  @media (min-width: 600px) {
+    h1 {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.1s ease-in;
+      font-size: 8em;
+      margin: 0 auto; } }
 
-/* line 58, styles.scss */
 .cloud {
   -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
   -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
-  -o-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
   transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+  position: absolute;
   color: white;
-  font-size: 6em;
+  font-size: 4em;
   display: block;
-  margin-top: -140px;
-  margin-left: 460px; }
-  @media (max-width: 600px) {
-    /* line 58, styles.scss */
+  margin-top: -84px;
+  margin-left: 82%; }
+  @media (min-width: 361px) {
     .cloud {
+      font-size: 4.25em;
+      margin-top: -100px; } }
+  @media (min-width: 381px) {
+    .cloud {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      font-size: 4.5em;
+      margin-top: -96px;
+      margin-left: -5%; } }
+  @media (min-width: 401px) {
+    .cloud {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      font-size: 4em;
+      margin-left: 76%;
+      margin-top: -86px;
+      margin-left: 5%; } }
+  @media (min-width: 481px) {
+    .cloud {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
       font-size: 5em;
-      margin-top: -116px;
-      margin-left: 358px; } }
-  @media (max-width: 480px) {
-    /* line 58, styles.scss */
+      margin-top: -106px;
+      margin-left: 76%; } }
+  @media (min-width: 600px) {
     .cloud {
-      font-size: 4.6em;
-      margin-top: -90px;
-      margin-left: 268px; } }
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      font-size: 6em;
+      margin-top: -124px;
+      margin-left: 77%; } }
+  @media (min-width: 720px) {
+    .cloud {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      font-size: 7em;
+      margin-top: -140px;
+      margin-left: 5%; } }
+  @media (min-width: 840px) {
+    .cloud {
+      -webkit-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      -moz-transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      transition: font-size 0.3s ease-in-out, margin 0.2s ease-in;
+      font-size: 6em;
+      margin-top: -124px;
+      margin-left: 76%; } }
 
-/* line 76, styles.scss */
-p {
+.howto {
+  margin: 0 auto;
   font-family: "Crete Round", serif;
-  margin-top: 60px;
   text-align: center;
-  font-size: 15px; }
-  @media (max-width: 600px) {
-    /* line 76, styles.scss */
-    p {
-      margin-top: 30px;
-      font-size: 17px;
+  font-size: 20px; }
+  @media (min-width: 481px) {
+    .howto {
       line-height: 1.4; } }
 
-/* line 88, styles.scss */
 form {
+  max-width: 420px;
   font-family: "Crete Round", serif;
   color: #333;
   font-size: 19px;
-  margin: 40px auto 24px;
+  margin: 20px auto 24px;
   line-height: 2;
   background: whitesmoke;
-  padding: 26px 58px;
+  padding: 16px;
   border-radius: 4px;
   box-shadow: 0 2px 10px black; }
-  @media (max-width: 600px) {
-    /* line 88, styles.scss */
+  @media (min-width: 600px) {
     form {
-      padding: 16px; } }
+      padding: 26px 58px; } }
 
-/* line 102, styles.scss */
 ul {
   list-style: none;
   margin-left: -40px;
   padding-bottom: 40px; }
 
-/* line 109, styles.scss */
 iframe {
   background-color: whitesmoke;
   box-shadow: 0 2px 10px black;
@@ -125,22 +151,18 @@ iframe {
   margin-bottom: 20px;
   border-radius: 4px; }
 
-/* line 118, styles.scss */
 .break {
   display: none; }
-  @media (max-width: 600px) {
-    /* line 118, styles.scss */
+  @media (min-width: 481px) {
     .break {
       display: block; } }
 
-/* line 125, styles.scss */
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important; }
 
-/* line 132, styles.scss */
 .notransition {
   -webkit-transition: none !important;
   -moz-transition: none !important;
