@@ -41,7 +41,7 @@ $(document).ready(function(){
 				return false;
 			}
 			if(tracks.length === 0) {
-				$('#results ul').append('<li><p>No results. Try a different search term, <br class="break">or increase the max sample length.</p></li>');
+				$('#results ul').append('<li><p>No more results. Try a different search term, <br class="break">or increase the max sample length.</p></li>');
 				resultEnd = true;
 			}
 			if(!tracks.errors){
