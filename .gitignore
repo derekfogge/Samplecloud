@@ -14,3 +14,5 @@ js/scripts-ck.js
 .sass-cache/7e61d75a20ce075f8d68b24682aa9541a6a466e2/styles.scssc
 
 *.scssc
+
+.sass-cache/*
